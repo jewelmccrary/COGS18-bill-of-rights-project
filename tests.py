@@ -45,14 +45,14 @@ class TestStudyingBillOfRights(unittest.TestCase):
         )
         self.assertEqual(self.study.score, 2)
 
-    def test_partial_phrase_not_accepted(self):
-        response = self.study.amend_description(
-            5,
-            "right to remain silent"
+    def test_amend_scotus_cases_partial(self):
+        response = self.study.amend_scotus_cases(
+            1,
+            "citizens united v. fec"
         )
-        self.assertEqual(self.study.score, 0)
-        self.assertIn("no self-incrimination", response)
 
+        self.assertEqual(self.study.score, 0)
+        self.assertIn("missing", response.lower())
     
 
 
