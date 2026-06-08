@@ -1,6 +1,6 @@
 # Bill of Rights Study Tool
 
-This project is a Python-based study tool that helps users studying for the AP US Government and Politics exam.
+This project is a Python-based tool that helps users study for the AP US Government and Politics exam.
 It allows users to learn and test their knowledge of the Bill of Rights.
 
 ## Features
